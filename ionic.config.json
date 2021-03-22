@@ -1,0 +1,7 @@
+{
+  "name": "LOJA_COMPUTADOR_RC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
