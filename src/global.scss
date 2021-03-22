@@ -24,3 +24,16 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+// FORMATOS PERSONALIZADOS
+ion-content{
+    --background: #92949c;
+}
+ion-toolbar{
+    --background: #000;
+    --color: #92949c;
+}
+.icon-carrinho{
+    --color: #92949c;
+    font-weight: bold;  
+}
