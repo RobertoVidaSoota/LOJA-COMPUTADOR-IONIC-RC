@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'carrinho',
     loadChildren: () => import('./pages/carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
   },
+  {
+    path: 'lista-desejos',
+    loadChildren: () => import('./pages/lista-desejos/lista-desejos.module').then( m => m.ListaDesejosPageModule)
+  },
   // {
   //   path: 'inicio',
   //   loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
