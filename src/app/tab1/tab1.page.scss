@@ -1,8 +1,14 @@
 ion-title{
     --color: #92949c;
     font-weight: bold;
+    text-align: center;
 }
 .item-menu{
     --background: #92949c;
-    font-weight: 700;
+    font-weight: bold;
+    font-size: 14pt;
+}
+p.sub-item{
+    margin-left: 20px;
+    font-weight: 600;
 }
