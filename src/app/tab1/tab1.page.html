@@ -1,17 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Inicio
-    </ion-title>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/carrinho">
-        <b><ion-icon slot="end" name="cart-outline"></ion-icon></b>
-      </ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<ion-split-pane contentId="menu-content">
+  <ion-menu contentId="menu-content" menuId="ft" side="start">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Categorias</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
 
-<ion-content [fullscreen]="true">
+        <ion-menu-toggle auto-hide="false" menu="ft">
+          <ion-item button class="item-menu">
+            <ion-label>
+              Gabinetes
+            </ion-label>
+          </ion-item>
 
-  
-</ion-content>
+        </ion-menu-toggle>
+      
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="menu-content"></ion-router-outlet>
+</ion-split-pane>

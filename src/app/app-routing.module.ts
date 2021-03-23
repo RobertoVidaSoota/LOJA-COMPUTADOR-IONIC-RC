@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: 'carrinho',
     loadChildren: () => import('./pages/carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
-  }
+  },
+  // {
+  //   path: 'inicio',
+  //   loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
+  // }
 ];
 @NgModule({
   imports: [
