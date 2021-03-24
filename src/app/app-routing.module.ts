@@ -13,6 +13,26 @@ const routes: Routes = [
   {
     path: 'lista-desejos',
     loadChildren: () => import('./pages/lista-desejos/lista-desejos.module').then( m => m.ListaDesejosPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./auth/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'cadastro',
+    loadChildren: () => import('./auth/cadastro/cadastro.module').then( m => m.CadastroPageModule)
+  },
+  {
+    path: 'recuperar-senha',
+    loadChildren: () => import('./auth/recuperar-senha/recuperar-senha.module').then( m => m.RecuperarSenhaPageModule)
+  },
+  {
+    path: 'informar-dados',
+    loadChildren: () => import('./checkout/informar-dados/informar-dados.module').then( m => m.InformarDadosPageModule)
+  },
+  {
+    path: 'confirmar-pagamento',
+    loadChildren: () => import('./checkout/confirmar-pagamento/confirmar-pagamento.module').then( m => m.ConfirmarPagamentoPageModule)
   }
 ];
 @NgModule({
