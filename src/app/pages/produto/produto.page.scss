@@ -4,6 +4,24 @@ ion-title{
     font-weight: bold;
 }
 .img-capa-produto{
-    width: 100%;
+    width: 80%;
     height: 200;
+    margin-left: auto;
+    margin-right: auto;
+}
+.green{
+    color: green;
+}
+.bg-green{
+    --background: green;
+}
+.cinzeiro{
+    color: #626469;
+}
+.preco{
+    color: #01ff3cc4;
+    font-size: 20pt;
+}
+.justfy{
+    margin-left: 10px;
 }
