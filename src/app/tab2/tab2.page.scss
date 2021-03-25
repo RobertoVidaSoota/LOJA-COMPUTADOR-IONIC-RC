@@ -6,6 +6,7 @@ ion-title{
 ion-searchbar{
     --background: #000;
     --color: green;
+    --cancel-button-color: green;
     font-weight: bold;
 }
 .img-center{
@@ -16,4 +17,7 @@ ion-searchbar{
 }
 .text-center{
     text-align: center;
+}
+.verde{
+    --icon-color: green;
 }
