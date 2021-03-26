@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonTabButton, IonTabs } from '@ionic/angular';
 
 @Component({
@@ -10,21 +11,25 @@ export class TabsPage {
 
   @ViewChild("tab", {static: false}) tab: IonTabs
   selected: boolean;
+  eventTb;
 
-  constructor() {}
+  constructor(
+    private router: Router
+  ) {}
 
-  // tgTab()
-  // {
-  //   let sel = this.tab.getSelected()
-  //   console.log(sel)
-  // }
+  tgTab()
+  {
+    // let sel = this.tab.getSelected()
+    // console.log(sel)
+  }
 
   tbClick()
   {
     setTimeout(() => {
+
       let sel = this.tab.getSelected()
-      console.log(sel)
-    }, 100)
+      this.router.navigate(["/tabs/"+sel])
+    }, 200)
     
   }
 }
