@@ -28,7 +28,14 @@ export class TabsPage {
     setTimeout(() => {
 
       let sel = this.tab.getSelected()
-      this.router.navigate(["/tabs/"+sel])
+      if(sel == "tab1")
+      {
+        this.router.navigate(["/tabs/"+sel+"/inicio"])
+      }
+      else{
+        this.router.navigate(["/tabs/"+sel])
+      }
+      
     }, 200)
     
   }
