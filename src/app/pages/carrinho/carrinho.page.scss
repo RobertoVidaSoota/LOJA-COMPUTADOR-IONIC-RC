@@ -2,3 +2,33 @@ ion-title{
     --color: #92949c;
     font-weight: bold;
 }
+.qtItens{
+    color: green;
+    font-weight: bold;
+    font-size: large;
+}
+.green{
+    --background: green;
+    color: green;
+}
+.label-foot{
+    font-size: 17px;
+    margin-top: 10px;
+}
+.black{
+    color: #000;
+}
+.item-carrinho{
+   background-color: #626469;
+   border-radius: 0;
+   width: 140px;
+}
+.row-cart{
+    padding: 10px;
+}
+.item-content h3, h4, p, h1, h2{
+    color: #000;
+}
+.item-content h3, h2{
+    font-weight: bold;
+}
