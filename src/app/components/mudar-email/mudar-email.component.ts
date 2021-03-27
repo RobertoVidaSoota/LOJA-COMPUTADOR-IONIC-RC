@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-sup-feedback',
-  templateUrl: './sup-feedback.component.html',
-  styleUrls: ['./sup-feedback.component.scss'],
+  selector: 'app-mudar-email',
+  templateUrl: './mudar-email.component.html',
+  styleUrls: ['./mudar-email.component.scss'],
 })
-export class SupFeedbackComponent implements OnInit {
+export class MudarEmailComponent implements OnInit {
 
   constructor(
     private modal: ModalController

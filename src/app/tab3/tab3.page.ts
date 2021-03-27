@@ -5,6 +5,10 @@ import { MudarEmailComponent } from '../components/mudar-email/mudar-email.compo
 import { MudarSenhaComponent } from '../components/mudar-senha/mudar-senha.component';
 import { NotfFrequenciaComponent } from '../components/notf-frequencia/notf-frequencia.component';
 import { NotfPreferenciasComponent } from '../components/notf-preferencias/notf-preferencias.component';
+import { SupAjudaComponent } from '../components/sup-ajuda/sup-ajuda.component';
+import { SupFeedbackComponent } from '../components/sup-feedback/sup-feedback.component';
+import { SupPrivacidadeComponent } from '../components/sup-privacidade/sup-privacidade.component';
+import { SupTermosComponent } from '../components/sup-termos/sup-termos.component';
 
 @Component({
   selector: 'app-tab3',
@@ -17,7 +21,7 @@ export class Tab3Page {
     private modal: ModalController
   ) {}
 
-  
+  // FUNÇÕES DE ALTERAÇÃO DE DADOS
   private async mudarEmail()
   {
     await this.modal.create({
@@ -50,7 +54,7 @@ export class Tab3Page {
     })
   }
 
-
+  // FUNÇÕES DE NOTIFICAÇÃO
   private async notfPreferencias()
   {
     await this.modal.create({
@@ -75,7 +79,45 @@ export class Tab3Page {
   // FUNÇÕES DE SUPORTE
   private async supAjuda()
   {
-    
+    await this.modal.create({
+      component: SupAjudaComponent,
+      backdropDismiss: false
+    }).then( (md) => {
+      md.present()
+    })
+  }
+
+
+  private async supFeedback()
+  {
+    await this.modal.create({
+      component: SupFeedbackComponent,
+      backdropDismiss: false
+    }).then( (md) => {
+      md.present()
+    })
+  }
+
+
+  private async supTermos()
+  {
+    await this.modal.create({
+      component: SupTermosComponent,
+      backdropDismiss: false
+    }).then( (md) => {
+      md.present()
+    })
+  }
+
+
+  private async supPrivacidade()
+  {
+    await this.modal.create({
+      component: SupPrivacidadeComponent,
+      backdropDismiss: false
+    }).then( (md) => {
+      md.present()
+    })
   }
 
 }

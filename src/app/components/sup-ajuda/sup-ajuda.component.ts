@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-sup-ajuda',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SupAjudaComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private modal: ModalController
+  ) { }
 
   ngOnInit() {}
+
+  close()
+  {
+    this.modal.dismiss()
+  }
+
 
 }

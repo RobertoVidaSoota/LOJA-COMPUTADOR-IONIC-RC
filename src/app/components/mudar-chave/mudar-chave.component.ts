@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-sup-feedback',
-  templateUrl: './sup-feedback.component.html',
-  styleUrls: ['./sup-feedback.component.scss'],
+  selector: 'app-mudar-chave',
+  templateUrl: './mudar-chave.component.html',
+  styleUrls: ['./mudar-chave.component.scss'],
 })
-export class SupFeedbackComponent implements OnInit {
+export class MudarChaveComponent implements OnInit {
 
   constructor(
     private modal: ModalController
@@ -18,6 +18,5 @@ export class SupFeedbackComponent implements OnInit {
   {
     this.modal.dismiss()
   }
-
 
 }
