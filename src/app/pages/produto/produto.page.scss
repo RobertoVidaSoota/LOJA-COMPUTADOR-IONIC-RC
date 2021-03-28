@@ -17,11 +17,46 @@ ion-title{
 }
 .cinzeiro{
     color: #626469;
+    --color: #626469;
 }
 .preco{
-    color: #01ff3cc4;
+    color: #fff;
     font-size: 20pt;
 }
 .justfy{
     margin-left: 10px;
+}
+.item-coment{
+    --background: #92949c;
+    --min-height: 150px;
+}
+.item-coment  h3{
+    color: #000;
+    font-weight: bold;
+    font-size: 14pt;
+}
+.item-coment > ion-label{
+    text-overflow: unset;
+    white-space: unset;
+    display: inline-block;
+}
+.item-coment > p{
+    width: 150px;
+    color: #000;
+}
+.item-estrelas{
+    color: #ddd;
+    width: 80px;
+    font-size: 8pt;
+}
+.item-coment ion-avatar{
+    width: 70px;
+    height: 70px;
+}
+.res{
+    margin-left: 20px;
+}
+.produto-estrelas{
+    color: #ddd;
+    font-size: 18pt;
 }
