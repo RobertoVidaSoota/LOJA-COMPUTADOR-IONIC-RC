@@ -1,23 +1,25 @@
 <ion-header>
   <ion-toolbar>
+
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
+
     <ion-title>Nome de Produto</ion-title>
     <ion-buttons slot="end">
       <ion-button routerLink="/carrinho">
         <b><ion-icon slot="end" name="cart-outline"></ion-icon></b>
       </ion-button>
   </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!-- APRESENTAÇÃO DO PRODUTO -->
   <div class="img-capa-produto">
     <img src="../../../assets/pc-1.png" alt="" height="300">
   </div>
-
-  <!-- <hr style="background-color: rgb(78, 78, 78);"> -->
 
   <h1>  
     <ion-row>
@@ -53,12 +55,13 @@
     </ion-row>
   </h1>
 
-  <ion-button expand="block" class="bg-green">
+  <ion-button expand="block" class="bg-green" routerLink="/informar-dados">
       comprar
   </ion-button>
 
   <hr style="background-color: rgb(78, 78, 78);">
 
+  <!-- SEÇÃO DA DESCRIÇÃO -->
   <h2 class="justfy">Descrição</h2>
 
   <p class="justfy">
@@ -68,6 +71,7 @@
 
   <hr style="background-color: rgb(78, 78, 78);">
 
+  <!-- SEÇÃO DE ESPECIFICAÇÕES -->
   <h2 class="justfy">Especificações</h2>
 
     <div class="justfy">
@@ -119,45 +123,10 @@
              
             <!-- CURTIDAS/RESPOSTAS -->
             <ion-icon class="cinzeiro" name="heart-outline"></ion-icon>
-            <a href="#" class="cinzeiro res">responder</a>
+            <a href="#" (click)="$event.preventDefault()" 
+            class="cinzeiro res">responder</a>
           </ion-col>
          
-      </ion-row>
-
-    </div>
-
-
-    <!-- ITEM DE COMENTARIO -->
-    <div class="item-coment">
-      
-      <ion-row>
-        <!-- FOTO DE PERFIL -->
-        <ion-col size="3">
-          <ion-avatar>
-            <img src="https://instagram.fssa7-1.fna.fbcdn.net/v/t51.2885-15/e35/81227219_2245372302423643_1837338915438276816_n.jpg?tp=1&_nc_ht=instagram.fssa7-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=IO1Pm_EWM_8AX_yuZ94&ccb=7-4&oh=90f4ee388116a146b36167903e7711c6&oe=60892C69&_nc_sid=4f375e" />
-          </ion-avatar>
-        </ion-col>
-
-        <!-- NOME E AVALIAÇÃO -->
-          <ion-col size="9">
-            <ion-label>
-              <h3>Fulano do Chocolate</h3>
-              <div class="item-estrelas">
-                <ion-icon slot="start" name="star"></ion-icon>
-                <ion-icon slot="start" name="star"></ion-icon>
-                <ion-icon slot="start" name="star"></ion-icon>
-                <ion-icon slot="start" name="star"></ion-icon>
-                <ion-icon slot="start" name="star-half"></ion-icon>
-              </div>
-            </ion-label>
-
-             <!-- COMENTARIO -->
-             <p> Merda </p>
-
-            <!-- CURTIDAS/RESPOSTAS -->
-            <ion-icon class="cinzeiro" name="heart-outline"></ion-icon>
-            <a href="#" class="cinzeiro res">responder</a>
-          </ion-col>
       </ion-row>
 
     </div>
