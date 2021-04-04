@@ -1,6 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Compras</ion-title>
+    
+    <ion-title mode="ios">Compras</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="/carrinho">
+        <b><ion-icon slot="end" name="cart-outline"></ion-icon></b>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -10,35 +17,43 @@
 
     <ion-row>
 
+      <!-- IMAGEM DO PRODUTO -->
       <ion-col size="4">
         <ion-thumbnail>
           <img src="../../assets/pc-1.png" />
         </ion-thumbnail>
       </ion-col>
-
+      
+      <!-- DADOS DO PRODUTO -->
       <ion-col size="8">
-        <h1>Nome de Produto</h1>
-
+        <h1 class="prod-name-compra">Nome de Produto</h1>
         <p>
-          Data de compra: <b>sexta-feira, 09/04/2021</b>
-        </p>
-
-        <p>
-          Status: <b> À confirmar </b>
-        </p>
-
-        <p>
-          Localização do produto: <b> Morgi Mirim, SP </b>
-        </p>
-
-        <p>
-          Data estimada de entrega: <b>sexta-feira, 23/04/2021 (ou antes)</b>
+          RTX 9080, 64 RAM, celeron 2000R7
         </p>
       </ion-col>
+
+      <p>
+        Data de compra: <b>sexta-feira, 09/04/2021</b>
+      </p>
+
+      <p>
+        Status: <b> À confirmar </b>
+      </p>
+
+      <p>
+        Localização do produto: <b> Morgi Mirim, SP </b>
+      </p>
+
+      <p>
+        Data estimada de entrega: <b>sexta-feira, 23/04/2021 (ou antes)</b>
+      </p>
     </ion-row>
 
+    <!-- BOTÃO DE CANCELAR -->
     <ion-button color="danger">
       cancelar pedido
     </ion-button>
   </div>
+
+  <hr style="background-color: rgb(78, 78, 78);">
 </ion-content>
