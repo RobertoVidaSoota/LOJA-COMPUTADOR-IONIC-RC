@@ -25,13 +25,14 @@ ion-title{
 }
 .justfy{
     margin-left: 10px;
+    color: #fff;
 }
 .item-coment{
     --background: #92949c;
     --min-height: 150px;
 }
 .item-coment  h3{
-    color: #000;
+    color: #fff;
     font-weight: bold;
     font-size: 14pt;
 }
@@ -40,9 +41,8 @@ ion-title{
     white-space: unset;
     display: inline-block;
 }
-.item-coment > p{
-    width: 150px;
-    color: #000;
+.item-coment  p{
+    color: #fff;
 }
 .item-estrelas{
     color: #ddd;

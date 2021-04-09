@@ -1,8 +1,11 @@
 .item-desejo{
-    --background: #92949c;
+    --background: #000;
     font-weight: bold;
 }
-ion-label h3{
+ion-item ion-label{
+    --color: #fff;
+}
+ion-item ion-label h3{
     font-size: 14pt;
 }
 ion-button{

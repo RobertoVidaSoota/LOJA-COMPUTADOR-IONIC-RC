@@ -27,13 +27,16 @@
 
 // FORMATOS PERSONALIZADOS
 ion-content{
-    --background: #92949c;
+    --background: #000;
 }
 ion-toolbar{
     --background: #000;
-    --color: #92949c;
+    --color: green;
 }
 .icon-carrinho{
-    --color: #92949c;
+    --color: green;
     font-weight: bold;  
+}
+ion-title{
+    --color: green !important;
 }
