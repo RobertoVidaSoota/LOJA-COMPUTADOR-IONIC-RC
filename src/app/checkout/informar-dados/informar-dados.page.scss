@@ -3,3 +3,24 @@ ion-title{
     font-size: 20px !important;
     font-weight: bold !important;
 }
+// FORMULARIO
+ion-card{
+    border: 1px solid;
+    border-color: #aaa;
+    
+
+    margin-top: 20px;
+
+    --color: rgb(168, 248, 181);
+    background: transparent;
+}
+ion-input, ion-select{
+    height: 50px;
+}
+
+.bg-green{
+    --background: green;
+}
+.pagar{
+    margin-top: 20px;
+}

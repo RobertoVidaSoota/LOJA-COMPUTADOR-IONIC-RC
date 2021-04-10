@@ -12,28 +12,55 @@
 <ion-content>
   <div>
     <ion-card class="nome-cartao">
-      
+      <ion-input 
+        type="text" 
+        placeholder="Nome do Cartão">
+      </ion-input>
     </ion-card>
 
     <ion-card class="cpf">
-      
+      <ion-input 
+        type="text" 
+        placeholder="CPF do Titular"
+        inputmode="decimal"
+        maxlength="13">
+      </ion-input>
     </ion-card>
 
-    <ion-card class="numero cartao">
-      
-    </ion-card>
-
-    <ion-card class="data-vencimento">
-      
+    <ion-card class="numero-cartao">
+      <ion-input 
+        type="text" 
+        placeholder="Número o cartão">
+      </ion-input>
     </ion-card>
 
     <ion-card class="codigo">
-      
+      <ion-input 
+        type="text" 
+        placeholder="Código de segurança">
+      </ion-input>
+    </ion-card>
+
+    <ion-card class="data-vencimento">
+      <ion-input 
+        type="text" 
+        placeholder="Data de Vencimento">
+      </ion-input>
     </ion-card>
 
     <ion-card class="parcelas"> 
-      
+        <ion-select multiple="false" placeholder="Parcelas à pagar">
+          <ion-select-option value="vista">À Vista</ion-select-option>
+          <ion-select-option value="2x">2x</ion-select-option>
+          <ion-select-option value="3x">3x</ion-select-option>
+          <ion-select-option value="4x">4x</ion-select-option>
+          <ion-select-option value="5x">5x</ion-select-option>
+        </ion-select>
     </ion-card>
+
+    <ion-button expand="block" class="bg-green pagar" routerLink="/tab-compras">
+      PAGAR
+    </ion-button>
   </div>
 </ion-content>
 
@@ -41,7 +68,7 @@
   <ion-toolbar>
     <ion-title> 
        <b>
-        Detalhes do Pedido
+        Detalhes do Pedido:
        </b>
      </ion-title>
   </ion-toolbar>
