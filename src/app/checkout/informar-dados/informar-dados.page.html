@@ -54,7 +54,8 @@
     </ion-card>
 
     <ion-card class="parcelas"> 
-        <ion-select multiple="false" placeholder="Parcelas à pagar">
+        <ion-select interface="alert" placeholder="Parcelas à pagar" 
+        class="custom-options" [interfaceOptions]="alert">
           <ion-select-option value="vista">À Vista</ion-select-option>
           <ion-select-option value="2x">2x</ion-select-option>
           <ion-select-option value="3x">3x</ion-select-option>

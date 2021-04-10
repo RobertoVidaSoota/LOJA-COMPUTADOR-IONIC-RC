@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-informar-dados',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InformarDadosPage implements OnInit {
 
-  constructor() { }
+  alert: any = {
+    header: 'Parcelas',
+    cssClass: "alerta"
+  }
+
+  constructor(
+    // private alert: AlertController
+  )
+  {
+    
+  }
 
   ngOnInit() {
   }
+
+  // async selAlert()
+  // {
+  //   const alert = await this.alert.create({
+  //     header: "Parcelas"
+  //   });
+
+  //   await alert.present();
+  // }
 
 }
