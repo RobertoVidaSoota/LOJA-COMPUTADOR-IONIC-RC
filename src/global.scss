@@ -41,21 +41,16 @@ ion-title{
     --color: green !important;
 }
 
-// .alert-wrapper button{
-//     --button-color: #971e49  !important;
-// }
 .alerta h2{
     color: #fff !important;
 }
 .alerta .alert-wrapper{
     background: #000;
+    button{
+        color: green;
+    }
+    --color-checked: green !important;
 }
 .alerta .select-interface-option .alert-radio-label{
     color: #fff !important;
-}
-.alerta .select-interface-option .select-interface-option[aria-checked=true] .alert-radio-icon{
-    background-color: green !important;
-}
-.alerta .select-interface-option .alert-button.sc-ion-alert-md{
-    color: green !important;
 }

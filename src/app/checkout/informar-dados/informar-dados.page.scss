@@ -24,3 +24,15 @@ ion-input, ion-select{
 .pagar{
     margin-top: 20px;
 }
+.title-detalhes{
+    // text-transform: capitalize;
+    font-weight: bold;
+    ion-icon{
+        color: #fff;
+        font-size: 25px;
+        margin-left: 20px;
+    }
+}
+.title-detalhes b{
+    color: #fff !important;
+}
