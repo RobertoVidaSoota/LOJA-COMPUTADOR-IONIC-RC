@@ -1,0 +1,14 @@
+*{
+    text-align: center;
+}
+ion-toolbar{
+    --background: #fff !important;
+    --color: #000 !important;
+    ion-title{
+        --color: #000 !important;
+    }
+}
+ion-content{
+    padding-top: 20px;
+    --background: #fff;
+}

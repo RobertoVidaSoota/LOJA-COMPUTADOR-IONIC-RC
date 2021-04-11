@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController } from '@ionic/angular';
+import { AlertController, PopoverController } from '@ionic/angular';
+import { PopPedidoComponent } from '../pop-pedido/pop-pedido.component';
 
 @Component({
   selector: 'app-informar-dados',
@@ -14,7 +15,7 @@ export class InformarDadosPage implements OnInit {
   }
 
   constructor(
-    // private alert: AlertController
+    private pop: PopoverController
   )
   {
     
@@ -23,13 +24,13 @@ export class InformarDadosPage implements OnInit {
   ngOnInit() {
   }
 
-  // async selAlert()
-  // {
-  //   const alert = await this.alert.create({
-  //     header: "Parcelas"
-  //   });
-
-  //   await alert.present();
-  // }
+  async abrirPopover()
+  {
+    const meuPop = await this.pop.create({
+      component: PopPedidoComponent
+    }).then((res) => {
+      res.present();
+    })
+  }
 
 }
