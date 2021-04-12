@@ -1,3 +1,4 @@
+// IMAGEM DE CIMA
 img.svg-play
 {
     width: 100%;   
@@ -6,5 +7,58 @@ img.svg-play
 {
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 50px;
     width: 80%;
+}
+.login-title
+{
+    text-align: center;
+    
+    font-size: 18pt;
+    font-weight: bold;
+    color: green;
+}
+
+// CAMPOS DO FORMULÁRIO
+ion-input, ion-select
+{
+    height: 50px;
+    font-size: 12pt;
+}
+ion-card
+{
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 0;    
+
+    margin-top: 20px;
+
+    --color: #000;
+}
+
+// BOTÕES
+.btn_login
+{
+    --background: green;
+    --color: #fff;
+
+    --border-radius: 0;
+}
+.btn_nav_cadastro
+{
+    --color: green;
+    --border-color: green;
+
+    --border-radius: 0;
+}
+.esqueci
+{
+    color: #92949c;
+    font-weight: bold;
+    font-size: 14pt;
+
+    text-align: center;
+
+    margin-bottom: 0;
+    margin-top: 90px;
 }
