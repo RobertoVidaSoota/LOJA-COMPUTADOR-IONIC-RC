@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "LOJA_COMPUTADOR_RC",
+  "appId": "io.ionic.sperenet",
+  "appName": "SPERENET",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
