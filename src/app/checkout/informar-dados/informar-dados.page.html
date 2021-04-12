@@ -11,14 +11,27 @@
 
 <ion-content>
   <div>
-    <ion-card class="nome-cartao">
+
+    <!-- NOME CARTÃO -->
+    <div class="label div_h_center">
+      <ion-label class="cinzeiro">
+        Nome do Cartão:
+    </ion-label>
+    </div>
+    <ion-card class="nome-cartao card_input">
       <ion-input 
         type="text" 
-        placeholder="Nome do Cartão">
+        placeholder="Nome do cartão">
       </ion-input>
     </ion-card>
 
-    <ion-card class="cpf">
+    <!-- CPF -->
+    <div class="label div_h_center">
+      <ion-label class="cinzeiro">
+        CPF:
+    </ion-label>
+    </div>
+    <ion-card class="cpf card_input">
       <ion-input 
         type="text" 
         placeholder="CPF do Titular"
@@ -27,7 +40,13 @@
       </ion-input>
     </ion-card>
 
-    <ion-card class="numero-cartao">
+    <!-- NUMERO CARTÃO -->
+    <div class="label div_h_center">
+      <ion-label class="cinzeiro">
+        Número do Cartão:
+    </ion-label>
+    </div>
+    <ion-card class="numero-cartao card_input">
       <ion-input 
         type="text" 
         placeholder="Número o cartão"
@@ -36,7 +55,13 @@
       </ion-input>
     </ion-card>
 
-    <ion-card class="codigo">
+    <!-- CODIGO SEGURANÇA -->
+    <div class="label div_h_center">
+      <ion-label class="cinzeiro">
+        Código de Segurança:
+    </ion-label>
+    </div>
+    <ion-card class="codigo card_input">
       <ion-input 
         type="text" 
         placeholder="Código de segurança"
@@ -45,7 +70,13 @@
       </ion-input>
     </ion-card>
 
-    <ion-card class="data-vencimento">
+    <!-- DATA DE VANCIMENTO -->
+    <div class="label div_h_center">
+      <ion-label class="cinzeiro">
+        Data de Vencimento:
+    </ion-label>
+    </div>
+    <ion-card class="data-vencimento card_input">
       <ion-input 
         type="text" 
         placeholder="Data de Vencimento"
@@ -53,7 +84,13 @@
       </ion-input>
     </ion-card>
 
-    <ion-card class="parcelas"> 
+    <!-- PARCELAS -->
+    <div class="label div_h_center">
+      <ion-label class="cinzeiro">
+        Parcelas:
+    </ion-label>
+    </div>
+    <ion-card class="parcelas card_input"> 
         <ion-select interface="alert" placeholder="Parcelas à pagar" 
         class="custom-options" [interfaceOptions]="alert">
           <ion-select-option value="vista">À Vista</ion-select-option>
