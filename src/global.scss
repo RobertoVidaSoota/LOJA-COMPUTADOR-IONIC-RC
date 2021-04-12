@@ -41,6 +41,7 @@ ion-title{
     --color: green !important;
 }
 
+// ALERTAS
 .alerta h2{
     color: #fff !important;
 }
@@ -53,4 +54,10 @@ ion-title{
 }
 .alerta .select-interface-option .alert-radio-label{
     color: #fff !important;
+}
+
+// CLASSES BÁSICAS DE PROCESSO
+.div_h_center{
+    margin-right: auto;
+    margin-left: auto;
 }
