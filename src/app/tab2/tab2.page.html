@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-searchbar placeholder="gabinete, placas..." (ionChange)="onSearchChange($event)" #search class="verde"></ion-searchbar>
   </ion-toolbar>
@@ -8,13 +8,14 @@
   
   <!-- MESSAGEM QUE INDICA A FUNÇÃO DA PÁGINA -->
   <div class="img-center">
-    <img src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-512.png" height="200">
+
+    <ion-icon slot="start" name="search"></ion-icon>
 
     <h3 class="text-center">Procure pelo PC gamer dos seus sonhos</h3>
   </div>
 
   <!-- DIV DE DADOS CASO O USUARIO PROCURE UM PRODUTO -->
-  <div>
+  <!-- <div>
     <ion-item class="src-item" lines="none">
       <ion-thumbnail slot="start">
         <img src="https://images.pexels.com/photos/3587478/pexels-photo-3587478.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
@@ -27,7 +28,6 @@
       </label>
       
     </ion-item>
-  </div>
-
+  </div> -->
   
 </ion-content>
