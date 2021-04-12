@@ -61,3 +61,37 @@ ion-title{
     margin-right: auto;
     margin-left: auto;
 }
+.cinzeiro{
+    color: #626469 !important;
+    --color: #626469;
+}
+
+// CAMPOS DO FORMULÁRIO
+ion-input, ion-select
+{
+    height: 50px;
+    font-size: 12pt;
+}
+ion-card.card_input
+{
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 0;    
+
+    --color: #000;
+}
+.label
+{
+    width: 95.4%;
+    margin-bottom: -8px;
+}
+ion-label
+{
+    color: #fff;
+}
+hr
+{
+    background-color: rgb(78, 78, 78);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}

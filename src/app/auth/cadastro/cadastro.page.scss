@@ -1,0 +1,57 @@
+// TITULO
+.cad-title
+{
+    text-align: center;
+    
+    font-size: 18pt;
+    font-weight: bold;
+    color: green;
+
+    margin-bottom: 20px;
+}
+
+// CAMPOS DO FORMULÁRIO
+ion-input, ion-select
+{
+    height: 50px;
+    font-size: 12pt;
+}
+ion-card.card_input
+{
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 0;    
+
+    --color: #000;
+}
+.label
+{
+    width: 95.4%;
+    margin-bottom: -8px;
+}
+ion-label
+{
+    color: #fff;
+}
+hr
+{
+    background-color: rgb(78, 78, 78);
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+// BOTÕES
+.btn_login
+{
+    --background: green;
+    --color: #fff;
+
+    --border-radius: 0;
+}
+.btn_nav_cadastro
+{
+    --color: green;
+    --border-color: green;
+
+    --border-radius: 0;
+}

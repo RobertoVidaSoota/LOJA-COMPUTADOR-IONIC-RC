@@ -17,24 +17,12 @@ img.svg-play
     font-size: 18pt;
     font-weight: bold;
     color: green;
+
+    margin-bottom: 20px;
 }
 
 // CAMPOS DO FORMULÁRIO
-ion-input, ion-select
-{
-    height: 50px;
-    font-size: 12pt;
-}
-ion-card
-{
-    border: 1px solid;
-    border-color: #fff;
-    border-radius: 0;    
 
-    margin-top: 20px;
-
-    --color: #000;
-}
 
 // BOTÕES
 .btn_login
